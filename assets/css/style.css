@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.37)100%), url('background.jpg');
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+.todo-list {
+  background-color: #1d1d1df5;
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  width: 400px;
+  min-height: 300px;
+  margin: 3rem;
+  border-radius: 10px;
+ 
+}
+
+.title {
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  font-family: "BioRhyme", serif;
+  color: #F6F1D1;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-input,
+.form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-button {
+  border: 1px;
+  background: #F6F1D1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+.form-button:hover {
+  color: #F6F1D1;
+  background: rgb(156, 173, 192);
+}
+
+body {
+  margin: 0;
+}
+
+
+
+.title {
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  font-family: "BioRhyme", serif;
+  color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form-input, .form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+.form-input {
+  outline: none;
+  background-color: white;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.form-button {
+  border: 1px;
+  background: #ffea73e1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  transition: 0.5s;
+}
+.form-button:hover {
+  color: #ffea73e1;
+  background: rgba(246, 241, 209, 0.1);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  min-height: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+}
+
+.check-button, .delete-button {
+  background-color: #F6F1D1;
+  border: none;
+  margin: 0 0.5rem;
+  height: 30px;
+  width: 30px;
+  color: white;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 800;
+
+}
+
+.check-button{
+  background: #47834c;
+}
+.delete-button {
+  background: tomato;
+}
+
+.task.done .check-button {
+  background-color: #17501c;
+  color: #F6F1D1;
+}
+
+.check-icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0 1rem 0;
+  font-size: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  flex-grow: 2
+}
+
+.task.done .content {
+  text-decoration: line-through;
+  color: rgb(168, 168, 168);
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 480px){
+  *{
+    margin: 0;
+    padding: 0;
+    display:flexbox
+    
+}
+
+
+  .todo-list{
+    width: auto;
+    margin: 5rem;
+    max-width: auto;
+  }
+
+   .form-button{
+     font-size: 12px;
+   }
+
+   .title {
+     margin-bottom: 1rem;
+   }
+}
+
