@@ -1,3 +1,4 @@
+
 import BotaoConclui from './components/concluirTarefa.js'
 import BotaoDeleta from './components/deletarTarefa.js'
 
@@ -14,10 +15,9 @@ const criarTarefa = (evento) => {
     const valor  = input.value
 
     if(input.value == "") {
-
-        alert("Informe uma tarefa :)")
+        Swal.fire(`Por favor informe uma tarefa :)`)
     }
-    
+
     else{
 
         const tarefa = document.createElement('li')
