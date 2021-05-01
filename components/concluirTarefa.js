@@ -1,25 +1,24 @@
+//adicionar a função de 'riscar' a tarefa para concluir no localStorage
 
+const concluirTarefa = (atualiza, id) => {
+    const tarefaCadastradas = JSON.parse(localStorage.getItem('tarefas'))
 
-// Criar um botão dentro da tarefa 
-const BotaoConclui = () => {
-    const botaoconclui = document.createElement('button')
-    botaoconclui.classList.add('check-button')
-    botaoconclui.innerHTML = `&#10004;`
+    tarefaCadastradas[id].concluida = !tarefaCadastradas[id].concluida
+    localStorage.setItem('tarefas', JSON.stringify(tarefaCadastradas))
 
-    botaoconclui.addEventListener('click', concluirTarefa)
-
-    return botaoconclui
+    atualiza()
 }
 
-//adicionar a função de 'riscar' a tarefa para concluir
-const concluirTarefa = (evento) => {
-    const botaoconclui = evento.target // estudar
+// Criar um botão dentro da tarefa 
+const BotaoConclui = (atualiza, id) => {
+    const botaoConclui = document.createElement('button')  
+    
+    botaoConclui.classList.add('check-button')
+    botaoConclui.innerHTML = `&#10004;`
 
-    const tarefaCompleta = botaoconclui.parentElement //estudar
+    botaoConclui.addEventListener('click', ()=> concluirTarefa(atualiza, id))
 
-    tarefaCompleta.classList.toggle('done')
-
-
+    return botaoConclui
 }
 
 export default BotaoConclui

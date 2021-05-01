@@ -15,7 +15,7 @@ body {
   background-color: #1d1d1df5;
   font-family: "Space Mono", monospace;
   padding: 1rem;
-  width: 400px;
+  width: 500px;
   min-height: 300px;
   margin: 3rem;
   border-radius: 10px;
@@ -31,21 +31,9 @@ body {
 
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
-}
 
-.form-input,
-.form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-}
-
-.form-input {
-  outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-button {
@@ -78,23 +66,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.form-input, .form-button {
-  border-radius: 0;
+.form-input, .form-button, .data-input {
   padding: 0.75rem;
   font-size: 0.75rem;
   border-radius: 5px;
 }
-.form-input {
-  outline: none;
-  background-color: white;
-  border-color: rgba(255, 255, 255, 0.1);
+.data-input, .form-input{
+  width: 8rem;
 }
 .form-button {
   border: 1px;
   background: #ffea73e1;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 0.25rem;
+  margin:0 0.55rem;
   transition: 0.5s;
 }
 .form-button:hover {
@@ -161,6 +146,10 @@ body {
   background-color: #0B2027;
 }
 
+.content-data{
+  color:white
+}
+
 .content {
   margin: 0 1rem 0;
   font-size: 15px;
@@ -180,23 +169,43 @@ body {
   *{
     margin: 0;
     padding: 0;
-    display:flexbox
+
     
+}
+
+body{
+  width: 100%;
+
 }
 
 
   .todo-list{
-    width: auto;
-    margin: 5rem;
+    width: 360px;
+    margin: 1rem;
     max-width: auto;
+  }
+
+  .data-task{
+    margin: 0.5rem 0;
+  }
+
+  .data-input, .form-input{
+    width: auto;
   }
 
    .form-button{
      font-size: 12px;
+     margin:0.55rem 0;
    }
 
    .title {
      margin-bottom: 1rem;
+   }
+
+   .form{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
    }
 }
 
