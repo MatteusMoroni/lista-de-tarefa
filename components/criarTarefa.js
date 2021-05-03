@@ -26,7 +26,7 @@ export const handleNovoItem = (evento) => {
     if(input.value == "" || input.value == " "){
         Swal.fire(`Por favor informe uma tarefa!`)
     } 
-    else if(calendario.value == null){
+    else if(calendario.value == ""){
         Swal.fire(`Informe a data e o horário da tarefa!`)
     }
     else{
