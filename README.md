@@ -21,6 +21,10 @@ This is a simple **To-Do WebApp** built with **JavaScript, CSS, and HTML**. The 
 - **Local Storage API** for data persistence
 
 ---
+## 📂 Estrutura do Projeto
+
+lista-de-tarefa/ ├── assets/ │ └── css/ │ └── style.css ├── components/ │ └── task.js ├── service/ │ └── storage.js ├── index.html ├── main.js └── README.md
+---
 
 ## Installation & Usage
 ### Requirements
